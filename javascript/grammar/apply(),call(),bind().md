@@ -11,7 +11,7 @@
 
 >每一个函数都包含一个prototype属性，这个属性是指向一个对象的引用，这个对象称作“原型对象”。 每一个函数都包含不同的原型对象。当将函数用作构造函数的时候，新创建的对象会从原型对象上继承属性。
 
-**apply与call相似,只是在传递的参数的结构不相同**
+###**apply与call相似,只是在传递的参数的结构不相同**
 
     const f = function(arg1, arg2) {
 
@@ -20,9 +20,10 @@
     f.call(obj, arg1, arg2);
     f.apply(obj, [arg1, arg2]);
 
-####改变f的上下文，使f中的this指向obj。
+* 改变f的上下文，使f中的this指向obj。
+* 传递参数形式不同，apply使用的是数组形式。
 
-**bind 拷贝**
+###**bind 拷贝**
 
     const  f = function() {
     console.log('this is new function');
@@ -30,7 +31,7 @@
 
     f.bind();
 
-####bind作用实质上是将f()函数作为模板进行拷贝一份
+* bind作用实质上是将f()函数作为模板进行拷贝一份
 
 
 
