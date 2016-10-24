@@ -13,22 +13,22 @@
 
 **apply与call相似,只是在传递的参数的结构不相同**
 
-  const f = function(arg1, arg2) {
+    const f = function(arg1, arg2) {
 
-  }
+    }
 
-  f.call(obj, arg1, arg2);
-  f.apply(obj, [arg1, arg2]);`
+    f.call(obj, arg1, arg2);
+    f.apply(obj, [arg1, arg2]);
 
 ####改变f的上下文，使f中的this指向obj。
 
 **bind 拷贝**
 
-`const  f = function() {
-  console.log('this is new function');
-}
+    const  f = function() {
+    console.log('this is new function');
+    }
 
-f.bind();`
+    f.bind();
 
 ####bind作用实质上是将f()函数作为模板进行拷贝一份
 
